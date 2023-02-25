@@ -1,0 +1,23 @@
+name: front-end-actions
+on: push
+jobs:
+  deploy:
+    name: update S3 Bucket
+    runs-on: ubuntu-latest
+    #permissions to interact with GitHub's OIDC Token endpoint.
+    permissions: 
+      id-token: write
+      contents: read
+    steps:
+     -name: Checkout
+      #checks-out the repository under $GITHUB_WORKSPACE, so the workflow can access it
+      uses: actions/checkout@v2
+     - name: Configure AWS credentials from Test account
+       uses: aws-actions/configure-aws-credentials@v1
+       with:
+        role-to-assume: arn:aws:iam::111111111111:role/my-github-actions-role-test
+        aws-region: us-east-1
+
+     - name: Copy files to the test website with the AWS CLI
+       run: |
+        aws s3 sync . s3://my-s3-test-website-bucket
