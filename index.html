@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mahdi Yahia</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#about">About Me</a> 
+                        </li>
+                        <li>
+                            <a href="#jobs">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#mywork">Projects</a> 
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a> 
+                        </li>
+                        <li>                    
+                            <a class="resume-link" href="#">Check My Resume</a>
+                        </li>
+                    </ul> 
+                </nav> 
+            </div>
+        </div>
+        <section id="intro">
+            <div>
+                <h1>Hi, I am</h1>
+            </div>
+            <div>
+                <h2>Mahdi Yahia.</br>
+                    I love solving problems.
+                </h2>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img class="personal-picture" src="picture.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h2 class="section-title">About Me</h2>
+                        <p>A fast-learner and a highly driven Software Engineering student at the Budapest University of Technology and Economics. I have worked with multiple programming tools and currently I am working on cloud based applications. </p>
+                        <div class="tab-titles">
+                                <h4 class="tab-links" onclick="opentab('education')">Education</h4>
+                                <h4 class="tab-links" onclick="opentab('certifications')">Certifications</h4>
+                                <h4 class="tab-links" onclick="opentab('tools')">Tools</h4>
+                        </div>
+                        <div class="tabs-content" id="certifications">
+                            <ul>
+                                <li><span>AWS certifications</span><br>
+                                    <a href="https://www.credly.com/badges/1886dae4-1879-4c35-88d8-74056067d990/public_url" target="_blank"> AWS Cloud Practitioner  
+                                    <div class="certification-badge"><img src="aws-certified-cloud-practitioner.png"></div></a></li>
+                            </ul>
+                        </div>
+                        <div class="tabs-content active-tab" id="education">
+                            <ul>
+                                <li><span>Budapest University of Technology and Economics</span><br>Bsc Computer Science Engineering<br>Software Engineering Specialization</li>
+                            </ul>
+                        </div>
+                        <div class="tabs-content" id="tools">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Java, Python, C, C++, C# </li>
+                                <li><span>Databases</span><br>SQL, Microsoft SQL Server programming, LINQ</li>
+                                <li><span>Mobile Application Development</span><br>Kotlin</li>
+                                <li><span>Web Development</span><br>HTML, CSS, Bootstrap, Java Script</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="jobs">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="jobs-list">
+                    <div class="job">
+                        <h3 class="job-title">Associate Data Annotator, </h3><h3 class="company">Tech Mahindra</h3><h3 class="period"> Jan 2022 - Present</h3>
+                        <ul>
+                            <li>Annotated Data to be used to improve the Artificial Intelligence behind the Google Virtual Assistant.</li>
+                            <li>Worked closely with machine learning, providing data needed to improve the virtual assistant's language understanding capabilities.</li>
+                            <li>Identified and made sense of language patterns.</li>
+                            <li>Communicated with team members on a daily basis to ensure high-quality work. </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mywork">
+            <div class="container">
+                <h2 class="section-title">Projects I have worked on</h2>
+                <div class="projects-list">
+                    <div class="project">
+                        <a href="https://github.com/MahdiYahia/Banking-System-in-Java" target="_blank"><img src="java-Banking-System.png"></a>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/MahdiYahia/Banking-System-in-CPP" target="_blank"><img src="cpp-Banking-System.png"></a>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/MahdiYahia/Wallet-in-C" target="_blank"><img src="c-wallet.png"></a>
+                    </div>
+                    <div class="project">
+                       <a href="https://github.com/MahdiYahia/Globetrotter-Application" target="_blank"><img src="kotlin-app-Globetrotter.png"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Reach out to me</h2>
+                <div class="social-icons">
+                    <a href="https://github.com/MahdiYahia" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/MahdiYahia/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a>
+                </div>
+                <p class="copyrights">Email Address: hello@mahdiyahia.com</p>
+                <form action="https://formspree.io/f/xayzopeb" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <textarea name="message" rows="6" placeholder="Enter your message" required></textarea>
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>    
+            </div>
+            <div class="copyrights">
+                <p>You are visitor number: <a id="toreplace"> </a></p> 
+            </div>
+            <div class="copyrights">
+                <p>Designed & Built by Mahdi Yahia.</p>
+            </div>            
+        </section>
+        <script>
+            fetch('https://4gt18qfjya.execute-api.us-east-1.amazonaws.com/firstDeployment/counterupdater')
+                .then(response => {
+                return response.json()})
+                .then(data => {
+                   console.log(data)
+                   document.getElementById('toreplace').innerText = data;})
+        </script>
+        <script>
+            var tabscontent= document.getElementsByClassName("tabs-content");
+            function opentab(tabname){
+                for(tabcontent of tabscontent){
+                    tabcontent.classList.remove("active-tab");
+                }
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
