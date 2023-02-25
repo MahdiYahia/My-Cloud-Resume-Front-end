@@ -20,4 +20,4 @@ jobs:
  
      - name: Sync files with AWS CLI
        run: |
-             aws s3 sync . s3://www.mahdiyahia.com
+             aws s3 sync . http://www.mahdiyahia.com.s3-website-us-east-1.amazonaws.com
