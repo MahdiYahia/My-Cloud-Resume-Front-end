@@ -229,6 +229,7 @@ form .submit-btn{
 }
 .project img{
     width: 95%;
+    height: 170px;
     border-radius: 10px;
     display: block;
     border: 3px solid #B2C4E3;
