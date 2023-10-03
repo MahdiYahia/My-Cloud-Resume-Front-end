@@ -261,6 +261,10 @@ form .submit-btn{
     font-size: 30px;
 }
 .period{
+    padding-left: 260px;
+    font-size: 25px;
+}
+.period-1{
     padding-left: 400px;
     font-size: 25px;
 }
